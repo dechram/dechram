@@ -3,6 +3,16 @@
 /* ==========================================================================
  Custom styles
 ========================================================================== */
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+
+
 .content{
 	height: 1000px;
   margin: 15px;
@@ -158,57 +168,79 @@ h2 #testimonial-left{
 /* ---- custom ---- */
 
 select{
-  margin:20px 
+  margin:60px 0 40px 200px; 
+  width: 250px;
+  height: 45px;
+  background: #4f6996
+  color: #fff;
+  left-padding: 15px;
+  vertical-align: left;
+  position: relative;
+  float: left;
 }
 
 /*Card Flip*/
 
-.card {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    -webkit-transition: -webkit-transform 1s;
-    -moz-transition: -moz-transform 1s;
-    -o-transition: -o-transform 1s;
-    transition: transform 1s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transform-origin: 50% 50%;
-}
-.card div {
-    display: block;
+#first-card div {
     height: 100%;
     width: 100%;
-    line-height: 260px;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    font-size: 140px;
+    top: 0;
+    left: 0;
     position: absolute;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -o-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-.card .front {
-  background: #4f6996;
+.front {
+  z-index: 0;
+  background: none;
+  font-size: 40px;
 }
-.card .back {
-    background: red;
-    -webkit-transform: rotateY( 180deg );
-    -moz-transform: rotateY( 180deg );
-    -o-transform: rotateY( 180deg );
-    transform: rotateY( 180deg );
+.back {
+  z-index: 1;
+  /*background-image: url(http://fillmurray.com/300/250);*/
+  background-size: cover;
+  background-position: center;
+  font-size: 10px;
+  -webkit-transform: rotate(360deg) scaleX(-1);
+  -moz-transform: rotate(360deg) scaleX(-1);
+  -o-transform: rotate(360deg) scaleX(-1);
+  transform: rotate(360deg) scaleX(-1);
 }
-.card.flipped {
-    -webkit-transform: rotateY( 180deg );
-    -moz-transform: rotateY( 180deg );
-    -o-transform: rotateY( 180deg );
-    transform: rotateY( 180deg );
+.flipped {
+  -webkit-transform: rotate(360deg) scaleX(-1);
+  -moz-transform: rotate(360deg) scaleX(-1);
+  -o-transform: rotate(360deg) scaleX(-1);
+  transform: rotate(360deg) scaleX(-1);
 }
 
+.flipped .back{
+  background-image: none;
+  -webkit-transform: rotate(360deg) scaleX(-1);
+  -moz-transform: rotate(360deg) scaleX(-1);
+  -o-transform: rotate(360deg) scaleX(-1);
+  transform: rotate(360deg) scaleX(-1);
+}
+
+#first-card {
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  -o-transition: -o-transform 1s;
+  transition: transform 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50%;
+}
+
+#memory {
+/*  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;*/
+}
 
 
 

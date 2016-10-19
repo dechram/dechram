@@ -163,23 +163,23 @@ function isAValidEmailAddress(emailAddress){
 // external js: isotope.pkgd.js
 
 // init Isotope
-// var $grid = $('.grid').isotope({
-//   itemSelector: '.element-item',
-//   masonry: {
-//     columnWidth: 160,
-//     isFitWidth: true
-//   }
-// });
+var $grid = $('.grid').isotope({
+  itemSelector: '.element-item',
+  masonry: {
+    columnWidth: 160,
+    isFitWidth: true
+  }
+});
 
-// $('.specialist-show').change(function(){
-//   var filterValue = $('.specialist-show').val();
-//   $grid.isotope({ filter: '.'+filterValue });
-// });
+$('.vertical-show').change(function(){
+  var filterValue = $('.vertical-show').val();
+  $grid.isotope({ filter: '.'+filterValue });
+});
 
 //flip the card
 
-function flip() {
-    $('.card').onClick('flipped');
+window.flip = function flip() {
+    $('#first-card').toggleClass('flipped');
 }
 
 
