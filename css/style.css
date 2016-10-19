@@ -1,0 +1,222 @@
+
+
+/* ==========================================================================
+ Custom styles
+========================================================================== */
+.content{
+	height: 1000px;
+  margin: 15px;
+}
+
+.parallax-window{
+	height: 300px;
+}
+
+body {
+  background: #fff;
+  font-family: sans-serif;
+  color: #4f6996;
+  text-align: center;
+}
+
+li .active{
+  font-style: strong;
+}
+
+.navbar-header{
+  background: #fff;
+  color: #4f6996;
+  }
+
+.navbar-inverse .navbar-collapse{
+    border-color: #fff;
+}
+
+.navbar-inverse {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.navbar-toggle{
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #4f6996;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #4f6996;
+    text-align: right;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: #4f6996;
+}
+
+.navbar-brand{
+  font-size: 40px;
+}
+
+hgroup { 
+  position: absolute;
+  top:20%;
+  width:85%;
+  height:56px; 
+}
+
+.tagline{
+  width: 100%;
+}
+
+
+hgroup h1 {
+  opacity:0; 
+  position:absolute; 
+  width:100%; 
+  margin:0px;
+  font-size:84px; 
+  font-size:7rem;     
+  line-height:40px; 
+  line-height:4rem;
+}
+
+hgroup h1 span { 
+  position: relative; 
+}
+
+.start {
+  z-index: 0; 
+}
+.line-break { 
+  height: 0px; 
+  overflow:hidden; 
+}
+
+.parallax-window{
+  border-width: 10px 0 10px 0;
+}
+
+img {
+  border-width: 10px 0 10px 0;
+  margin: 15px;
+}
+
+#testimonial-left{
+  border-radius: 50%;
+}
+
+h2 #testimonial-left{
+  font-size: 30px;
+
+}
+
+#testimonial-center{
+  border-radius: 50%;
+}
+
+#testimonial-right{
+  border-radius: 50%;
+}
+
+#teasers{
+    border-width: 10px 0 10px 0;
+
+}
+
+#contact-form {
+  text-align: left;
+  padding-left: 15px;
+
+}
+
+/* ---- isotope ---- */
+.grid {
+  margin: 0 auto;
+}
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* ---- .element-item ---- */
+.element-item {
+  position: relative;
+  float: left;
+  width: 250px;
+  height: 250px;
+  margin: 5px;
+  padding: 10px;
+  background: #4f6996;
+  color: #262524;
+}
+.element-item > * {
+  margin: 0;
+  padding: 0;
+}
+/* ---- custom ---- */
+
+select{
+  margin:20px 
+}
+
+/*Card Flip*/
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+}
+.card div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 140px;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.card .front {
+  background: #4f6996;
+}
+.card .back {
+    background: red;
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+.card.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+
+
+
+
+
+
+
+
+
+
+
